@@ -83,6 +83,19 @@ public class actividad5 extends JFrame {
 		btnNewButton.setBounds(270, 308, 85, 21);
 		panel_1.add(btnNewButton);
 		
+		
+		// Añadiendo el ActionListener al botón
+	    btnNewButton.addActionListener(e -> {
+	        String usuario = textField.getText();
+	        String contraseña = new String(passwordField.getPassword());
+
+	        if (usuario.equals("sara") && contraseña.equals("123")) {
+	            System.out.println ("Usuario y contraseña correctos");
+	        } else {
+	        	System.out.println("Intentelo de nuevo");
+	        }
+	    });
+		
 		Panel panel = new Panel();
 		panel.setBounds(676, 0, 253, 408);
 		panel.setBackground(new Color(64, 0, 128));
