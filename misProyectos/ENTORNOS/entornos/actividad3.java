@@ -1,4 +1,4 @@
-package misProyectos;
+package entornos;
 
 import java.awt.EventQueue;
 
