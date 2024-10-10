@@ -12,38 +12,28 @@ public class ej9_sumaParesEimPares {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Introduzca el 1 numero: ");
-		int numero = sc.nextInt();
+		int sumaPar = 0;
+		int sumaImpar = 0;
 
-		System.out.println("Introduzca el 2 numero: ");
-		int numero2 = sc.nextInt();
+		for (int i = 1; i <= 10; i++) {
 
-		System.out.println("Introduzca el 3 numero: ");
-		int numero3 = sc.nextInt();
+			System.out.println("Introduzca el " + i + " numero: ");
 
-		System.out.println("Introduzca el 4 numero: ");
-		int numero4 = sc.nextInt();
+			int numero = sc.nextInt();
 
-		System.out.println("Introduzca el 5 numero: ");
-		int numero5 = sc.nextInt();
+			if (numero % 2 == 0) {
 
-		System.out.println("Introduzca el 6 numero: ");
-		int numero6 = sc.nextInt();
+				sumaPar = sumaPar + numero;
+			} else {
+				sumaImpar = sumaImpar + numero;
 
-		System.out.println("Introduzca el 7 numero: ");
-		int numero7 = sc.nextInt();
+			}
+		}
 
-		System.out.println("Introduzca el 8 numero: ");
-		int numero8 = sc.nextInt();
-
-		System.out.println("Introduzca el 9 numero: ");
-		int numero9 = sc.nextInt();
-
-		System.out.println("Introduzca el 10 numero: ");
-		int numero10 = sc.nextInt();
+		System.out.println("La suma de numeros pares = " + sumaPar);
+		System.out.println("La suma de numeros impares = " + sumaPar);
 
 		sc.close();
-
 	}
 
 }
