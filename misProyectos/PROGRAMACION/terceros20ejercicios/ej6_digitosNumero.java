@@ -14,10 +14,28 @@ public class ej6_digitosNumero {
 
 		System.out.println("Introduce un numero entero: ");
 
-		String numero = scanner.nextLine();
+		int numero = scanner.nextInt();
 
 		scanner.close();
 
+		int digitos = 0;
+
+		if (numero == 0) {
+
+			digitos = 1;
+
+		} else {
+
+			while (numero > 0) {
+
+				numero = numero / 10;
+
+				digitos++;
+
+			}
+		}
+
+		System.out.println("El numero tiene " + digitos + " digitos");
 	}
 
 }
