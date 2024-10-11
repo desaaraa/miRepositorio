@@ -15,6 +15,7 @@ public class ej12_SumaNumerosDigito {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca numero entero: ");
 		int numero = sc.nextInt();
+		sc.close();
 		String numeroConvertido = Integer.toString(numero);
 
 		int largoNumero = numeroConvertido.length();
