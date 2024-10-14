@@ -16,13 +16,6 @@ public class ej4_invertitArray {
 		numeros[3] = 20;
 		numeros[4] = 25;
 
-		int numeros2[] = new int[5];
-
-		for (int i = 0; i < 5; i++) {
-
-			numeros2[i] = numeros[4];
-		}
-
 	}
 
 }
