@@ -17,12 +17,6 @@ public class ej16_ContadorVocales {
 		String texto = sc.nextLine();
 		sc.close();
 
-		char A = 'a';
-		char E = 'e';
-		char I = 'i';
-		char O = 'o';
-		char U = 'u';
-
 		int largoPalabra = texto.length();
 
 		int contador = 0;
@@ -31,13 +25,25 @@ public class ej16_ContadorVocales {
 
 			char caracter = texto.charAt(i);
 
-			if (i == A) {
+			if (caracter == 'a') {
 				contador = contador + 1;
-			} else if (i == E) {
+
+			} else if (caracter == 'e') {
 				contador = contador + 1;
+
+			} else if (caracter == 'i') {
+				contador = contador + 1;
+
+			} else if (caracter == 'o') {
+				contador = contador + 1;
+
+			} else {
+				if (caracter == 'u') {
+					contador = contador + 1;
+				}
 			}
 
 		}
+		System.out.println("Su cadena tiene " + contador + " vocales");
 	}
-
 }
