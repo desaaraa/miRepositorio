@@ -16,6 +16,24 @@ public class ej4_invertitArray {
 		numeros[3] = 20;
 		numeros[4] = 25;
 
+		for (int j = 0; j < 5; j++) {
+
+			System.out.println("numeros [" + j + "] = " + numeros[j]);
+		}
+
+		int numeros2[] = new int[5];
+
+		for (int i = 0; i < 5; i++) {
+
+			numeros2[i] = numeros[numeros.length - 1 - i];
+
+		}
+
+		for (int x = 0; x < 5; x++) {
+
+			System.out.println("numeros2 [" + x + "] = " + numeros2[x]);
+
+		}
 	}
 
 }
