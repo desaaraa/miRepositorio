@@ -4,47 +4,56 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/*Escribe un programa que:
-1.	Cree un ArrayList de enteros.
-2.	Permita al usuario ingresar 5 números enteros.
-3.	Los agregue al ArrayList.
-4.	Imprima el contenido del ArrayList después de haber ingresado los números.
-Pistas:
-•	Usa el método add() para agregar elementos al ArrayList.
-•	Usa un bucle for o while para permitir al usuario ingresar los números.
+/*1.	Cree un ArrayList de cadenas (String).
+2.	Permita al usuario agregar nombres al ArrayList hasta que ingrese la palabra "fin".
+3.	Después de eso, imprima todos los nombres ingresados.
+4.	Permita al usuario eliminar un nombre específico y vuelva a mostrar la lista actualizada.
 */
 
 public class ej1_creacionArrayList {
 
 	public static void main(String[] args) {
-		
-		List <Integer> lista = new ArrayList<>(); 
-		
+
+		List<String> lista = new ArrayList<>();
+
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("Introduzca 1 numero: ");
-		int numero1 = sc.nextInt();
-		lista.add(numero1);
-		
-		System.out.println("Introduzca 2 numero: ");
-		int numero2 = sc.nextInt();
-		lista.add(numero2);
-		
-		System.out.println("Introduzca 3 numero: ");
-		int numero3 = sc.nextInt();
-		lista.add(numero3);
-		
-		System.out.println("Introduzca 4 numero: ");
-		int numero4 = sc.nextInt();
-		lista.add(numero4);
-		
-		System.out.println("Introduzca 5 numero: ");
-		int numero5 = sc.nextInt();
-		lista.add(numero5);
-		
+
+		String nombre = "";
+
+		do {
+
+			System.out.println("Introduzca un nombre: ");
+			System.out.println("Cuando quiera acabar escriba fin");
+			nombre = sc.nextLine();
+
+			if (!nombre.equals("fin")) {
+				lista.add(nombre);
+			}
+
+		} while (!nombre.equals("fin"));
+		{
+
+			for (String i : lista) {
+
+				System.out.println(i);
+			}
+
+			System.out.println("¿Quiere borrar un usuario? Introduzca si o no:");
+			String respuesta = sc.nextLine();
+
+			if (respuesta.equals("si")) {
+
+				System.out.println("¿Qué nombre quiere borrar?");
+				String nomBorrado = sc.nextLine();
+				lista.remove(nomBorrado);
+			}
+
+			for (String i : lista) {
+
+				System.out.println(i);
+			}
+		}
 		sc.close();
-		
-		for ()
 	}
 
 }
