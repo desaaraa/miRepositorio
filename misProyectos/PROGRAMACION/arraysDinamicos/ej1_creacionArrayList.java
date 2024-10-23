@@ -18,9 +18,9 @@ public class ej1_creacionArrayList {
 
 		Scanner sc = new Scanner(System.in);
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 1; i <= 5; i++) {
 
-			System.out.println("Introduzca un numero: ");
+			System.out.println("Introduzca el numero " + i + ":");
 			int numero = sc.nextInt();
 			lista.add(numero);
 		}
