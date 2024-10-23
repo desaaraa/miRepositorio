@@ -1,6 +1,7 @@
 package arraysDinamicos;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -32,7 +33,17 @@ public class ej5_ordenarArrayList {
 
 		} while (numero > 0);
 
-		// arraylist sin ordenar quda ordenarlo
+		System.out.println("Lista sin ordenar");
+
+		for (int i : lista) { // mostrar indice cambiado
+
+			System.out.print(i + " ");
+		}
+
+		Collections.sort(lista);
+
+		System.out.println(" ");
+		System.out.println("Lista ordenada");
 
 		for (int i : lista) { // mostrar indice cambiado
 
