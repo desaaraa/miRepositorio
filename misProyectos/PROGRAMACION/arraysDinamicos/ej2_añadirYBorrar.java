@@ -18,6 +18,42 @@ public class ej2_añadirYBorrar {
 
 		Scanner sc = new Scanner(System.in);
 
+		String nombre = "";
+
+		do {
+
+			System.out.println("Introduzca un nombre: ");
+			System.out.println("Cuando quiera acabar escriba fin");
+			nombre = sc.nextLine();
+
+			if (!nombre.equals("fin")) {
+				lista.add(nombre);
+			}
+
+		} while (!nombre.equals("fin"));
+		{
+
+			for (String i : lista) {
+
+				System.out.println(i);
+			}
+
+			System.out.println("¿Quiere borrar un usuario? Introduzca si o no:");
+			String respuesta = sc.nextLine();
+
+			if (respuesta.equals("si")) {
+
+				System.out.println("¿Qué nombre quiere borrar?");
+				String nomBorrado = sc.nextLine();
+				lista.remove(nomBorrado);
+			}
+
+			for (String i : lista) {
+
+				System.out.println(i);
+			}
+		}
+		sc.close();
 	}
 
 }
