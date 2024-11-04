@@ -51,6 +51,8 @@ public class ej4_actualizarElementosArrays {
 			}
 
 		} while (indiceACambiar != 00);
+		
+		sc.close();
 
 	}
 

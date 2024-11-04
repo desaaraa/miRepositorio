@@ -31,6 +31,7 @@ public class ej4_EliminarElementos {
 		// Mostrar el HashMap después de la eliminación
 		System.out.println(fruta);
 
+		sc.close();
 	}
 
 }

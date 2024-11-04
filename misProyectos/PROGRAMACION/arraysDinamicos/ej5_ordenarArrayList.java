@@ -49,7 +49,7 @@ public class ej5_ordenarArrayList {
 
 			System.out.print(i + " ");
 		}
-
+sc.close();
 	}
 
 }

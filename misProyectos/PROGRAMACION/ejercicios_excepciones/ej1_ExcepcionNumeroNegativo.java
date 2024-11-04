@@ -1,5 +1,6 @@
 package ejercicios_excepciones;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /*
@@ -25,7 +26,7 @@ public class ej1_ExcepcionNumeroNegativo {
 			} else
 				System.out.println("Ha ingresado el número: " + numero);
 
-		} catch (java.util.InputMismatchException e) {
+		} catch (InputMismatchException e) {
 			System.out.println("Debe introducir un numero, no caracteres");
 		}
 
