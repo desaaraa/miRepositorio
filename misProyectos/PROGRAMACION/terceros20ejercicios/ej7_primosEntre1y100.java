@@ -9,13 +9,13 @@ public class ej7_primosEntre1y100 {
 
 	public static void main(String[] args) {
 
-		for (int cont = 1; cont <= 100; cont++) {
+		for (int i = 1; i <= 100; i++) {
 
 			int divisibles = 0;
 
-			for (int cont2 = 1; cont2 <= cont; cont2++) {
+			for (int j = 1; j <= i; j++) {
 
-				if (cont % cont2 == 0) {
+				if (i % j == 0) {
 
 					divisibles++;
 				}
@@ -23,7 +23,7 @@ public class ej7_primosEntre1y100 {
 			}
 
 			if (divisibles == 2) {
-				System.out.println(cont);
+				System.out.println(i);
 			}
 
 		}
