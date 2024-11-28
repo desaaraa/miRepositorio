@@ -60,7 +60,7 @@ public class act10 {
 				break;
 
 			default:
-				System.out.println("Usted ha salido de la calculadora");
+				System.out.println("Usted ha salido de la Calculadora");
 				break;
 			}
 

@@ -27,10 +27,11 @@ public class ej1_contarFrecuenciaDeRepeticion {
 				repeticiones.put(i, 1);
 
 		}
+		// una forma de mostrar
+		// for (String j : repeticiones.keySet()) {
+		// System.out.println(j + ": " + repeticiones.get(j));
 
-		for (String j : repeticiones.keySet()) {
-			System.out.println(j + ": " + repeticiones.get(j));
-		}
+		System.out.println(repeticiones); // otra forma de mostrar
 	}
 
 }
