@@ -45,14 +45,13 @@ public class Circulo {
 
 	}
 
-	public void CalcularArea() {
+	public double CalcularArea() {
 
 		double resultadoPotencia = Math.pow(radio, exponente);
 
 		double area = pi * resultadoPotencia;
 
-		System.out.println("El perímetro del círculo es: " + area + " cm2");
-
+		return area;
 	}
 
 }
