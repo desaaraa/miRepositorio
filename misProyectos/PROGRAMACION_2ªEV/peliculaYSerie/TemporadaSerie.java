@@ -1,22 +1,22 @@
-package ej3;
+package peliculaYSerie;
 
-public class Temporada2Serie {
-
+public class TemporadaSerie {
+	
 	private int numero;
 	private int capitulos;
+	
+	//constructores---------------------------------------------------------------------------------
 
-	// constructores---------------------------------------------------------------------------------
-
-	public Temporada2Serie() {
-	}
-
-	public Temporada2Serie(int numero, int capitulos) {
+	
+	public TemporadaSerie() {}
+	
+	public TemporadaSerie(int numero, int capitulos) {
 		this.numero = numero;
 		this.capitulos = capitulos;
 	}
-
-	// getters y
-	// setters------------------------------------------------------------------------------
+	
+	
+	//getters y setters------------------------------------------------------------------------------
 
 	public int getNumero() {
 		return numero;
@@ -33,5 +33,6 @@ public class Temporada2Serie {
 	public void setCapitulos(int capitulos) {
 		this.capitulos = capitulos;
 	}
+	
 
 }

@@ -1,4 +1,4 @@
-package ej2;
+package calculadora;
 
 public class Calculadora {
 

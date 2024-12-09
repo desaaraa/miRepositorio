@@ -1,4 +1,4 @@
-package ej1;
+package alumno;
 
 import java.util.Scanner;
 

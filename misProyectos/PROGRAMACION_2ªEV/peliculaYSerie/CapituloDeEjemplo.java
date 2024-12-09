@@ -1,4 +1,4 @@
-package ej3;
+package peliculaYSerie;
 
 public class CapituloDeEjemplo {
 

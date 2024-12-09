@@ -1,4 +1,4 @@
-package ej3;
+package peliculaYSerie;
 
 public class Pelicula {
 
@@ -54,4 +54,13 @@ public class Pelicula {
 		this.duracion = duracion;
 	}
 
+	// mostrar-------------------------------------------------
+
+	public void MostrarPelicula() {
+		System.out.println("Usted quiere consultar información de la pelicula: " + getNombre());
+		System.out.println("->Genero: " + getGenero());
+		System.out.println("->Año: " + getAnio());
+		System.out.println("->Genero: " + getGenero());
+		System.out.println("->Duracion: " + getDuracion());
+	}
 }
