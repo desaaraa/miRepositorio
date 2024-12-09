@@ -36,16 +36,20 @@ public class Rectangulo {
 
 	// metodos area y perimetro----------------------------------------
 
-	public void CalcularPerimetro() {
+	public double CalcularPerimetro() {
 
 		double perimetro = (base * 2) + (altura * 2);
-		System.out.println("El perimetro del rectangulo es: " + perimetro + " cm");
-
+		return perimetro;
 	}
 
-	public void CalcularArea() {
+	public double CalcularArea() {
 		double area = base * altura;
-		System.out.println("El área del rectangulon es: " + area + " cm2");
+		return area;
+	}
+
+	void MostrarPorPantalla() {
+		System.out.println("El area del rectangulo es: " + CalcularArea());
+		System.out.println("El perímetro del rectangulo es: " + CalcularPerimetro());
 	}
 
 }

@@ -56,16 +56,21 @@ public class Triangulo {
 
 	// metodos area y perimetro---------------------------------------
 
-	public void CalcularPerimetro() {
+	public double CalcularPerimetro() {
 
 		double perimetro = base + lado1 + lado2;
 
-		System.out.println("El perímetro del triángulo es: " + perimetro + " cm");
-
+		return perimetro;
 	}
 
-	public void CalcularArea() {
+	public double CalcularArea() {
 		double area = (base * altura) / 2;
+		return area;
+	}
+
+	void MostrarPorPantalla() {
+		System.out.println("El area del triangulo es: " + CalcularArea());
+		System.out.println("El perímetro del triangulo es: " + CalcularPerimetro());
 	}
 
 }

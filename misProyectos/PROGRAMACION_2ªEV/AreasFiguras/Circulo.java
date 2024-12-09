@@ -37,11 +37,11 @@ public class Circulo {
 
 	// metodos area y permietro
 
-	public void CalcularPerimetro() {
+	public double CalcularPerimetro() {
 
 		double perimetro = 2 * pi * radio;
 
-		System.out.println("El perímetro del círculo es: " + perimetro + " cm");
+		return perimetro;
 
 	}
 
@@ -52,6 +52,11 @@ public class Circulo {
 		double area = pi * resultadoPotencia;
 
 		return area;
+	}
+
+	void MostrarPorPantalla() {
+		System.out.println("El area del circulo es: " + CalcularArea());
+		System.out.println("El perímetro del circulo es: " + CalcularPerimetro());
 	}
 
 }

@@ -24,15 +24,42 @@ public class Figuras {
 			System.out.println("Introduzca el radio: ");
 			double radio = sc.nextDouble();
 			circulo.setRadio(radio);
-			System.out.println("El area del circulo es: " + circulo.CalcularArea());
+
+			circulo.MostrarPorPantalla();
 
 			break;
 
 		case 2:
 
+			System.out.println("Introduzca la base: ");
+			double base = sc.nextDouble();
+			triangulo.setBase(base);
+
+			System.out.println("Introduzca el lado 1: ");
+			double lado1 = sc.nextDouble();
+			triangulo.setLado1(lado1);
+
+			System.out.println("Introduzca el lado 2: ");
+			double lado2 = sc.nextDouble();
+			triangulo.setLado2(lado2);
+
+			System.out.println("Introduzca la altura: ");
+			double altura = sc.nextDouble();
+			triangulo.setAltura(altura);
+
+			triangulo.MostrarPorPantalla();
+
 			break;
 
 		case 3:
+
+			System.out.println("Introduzca la base: ");
+			double base2 = sc.nextDouble();
+			rectangulo.setBase(base2);
+
+			System.out.println("Introduzca la altura: ");
+			double altura2 = sc.nextDouble();
+			rectangulo.setAltura(altura2);
 
 			break;
 		}
