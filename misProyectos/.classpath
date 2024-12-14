@@ -2,7 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="PROGRAMACION_1ªEVA"/>
 	<classpathentry kind="src" path="ENTORNOS"/>
-	<classpathentry kind="src" path="PROGRAMACION_2ªEV"/>
+	<classpathentry kind="src" path="POO"/>
+	<classpathentry kind="src" path="CLASES ABSTRACTAS"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
 		<attributes>
 			<attribute name="module" value="true"/>
