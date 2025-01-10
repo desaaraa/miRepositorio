@@ -1,12 +1,15 @@
 package empleados;
 
 public class EmpleadoAsalariado extends Empleado {
+	private double salarioFijo;
 
-	private int sueldo = 1500;
-
-	@Override
-	void calcularSalario() {
-		System.out.println("Un empleado asalariado cobra: " + sueldo);
+	public EmpleadoAsalariado(String nombre, double salarioFijo) {
+		super(nombre);
+		this.salarioFijo = salarioFijo;
 	}
 
+	@Override
+	public double calcularSalario() {
+		return salarioFijo;
+	}
 }
