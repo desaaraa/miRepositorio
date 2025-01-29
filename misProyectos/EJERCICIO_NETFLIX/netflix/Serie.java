@@ -47,4 +47,17 @@ public class Serie {
 		this.listaTemporadas = listaTemporadas;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Serie: ").append(nombre).append("\n");
+		sb.append("Género: ").append(genero).append("\n");
+		sb.append("Temporadas: \n");
+		for (Temporada temporada : listaTemporadas) {
+			sb.append(temporada.toString()).append("\n");
+		}
+		return sb.toString();
+
+	}
+
 }

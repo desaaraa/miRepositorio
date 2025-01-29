@@ -1,8 +1,5 @@
 package netflix;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Pelicula {
 
 	private String nombre;
@@ -66,14 +63,12 @@ public class Pelicula {
 		this.duracion = duracion;
 	}
 
-	// metodos--------------------------------------------------------------------
+	@Override
+	public String toString() {
 
-	public void mostrarPelicula() {
+		return "Pelicula{" + "nombre='" + nombre + '\'' + ", director='" + director + '\'' + ", genero='" + genero
+				+ '\'' + ", año=" + año + ", duracion=" + duracion + " minutos}";
 
 	}
 
-	public void consultarUsuarios() {
-
-		List<Usuario> usuarios = new ArrayList<>();
-	}
 }

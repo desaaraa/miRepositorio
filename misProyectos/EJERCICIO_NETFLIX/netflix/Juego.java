@@ -44,4 +44,10 @@ public class Juego {
 		this.plataforma = plataforma;
 	}
 
+	@Override
+	public String toString() {
+		return "Contenido{" + "nombre='" + nombre + '\'' + ", genero='" + genero + '\'' + ", plataforma='" + plataforma
+				+ '\'' + '}';
+	}
+
 }

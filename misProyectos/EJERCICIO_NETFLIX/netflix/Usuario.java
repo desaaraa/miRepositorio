@@ -6,27 +6,48 @@ import java.util.List;
 public class Usuario {
 
 	private String nombre;
-	private String contraseña;
+	private String contrasenia;
 	private String fechaAlta;
 	private String metodoPago;
 	private String direccion;
 	private String pais;
 	private String rol; // administrador o usuario
+	private String plan;
+	private List<Juego> juegos = new ArrayList<>();
+	private List<Serie> series = new ArrayList<>();
+	private List<Pelicula> peliculas = new ArrayList<>();
 
 	// constructores----------------------------------------------------------------------------
 
-	public Usuario(String nombre, String contraseña, String fechaAlta, String metodoPago, String direccion, String pais,
-			String rol) {
+	public Usuario() {
+	}
+
+	public Usuario(String nombre, String contrasenia, String fechaAlta, String metodoPago, String direccion,
+			String pais, String rol, String plan) {
 		this.nombre = nombre;
-		this.contraseña = contraseña;
+		this.contrasenia = contrasenia;
 		this.fechaAlta = fechaAlta;
 		this.metodoPago = metodoPago;
 		this.direccion = direccion;
 		this.pais = pais;
 		this.rol = rol;
+		this.plan = plan;
 	}
 
-	public Usuario() {
+	public Usuario(String nombre, String contrasenia, String fechaAlta, String metodoPago, String direccion,
+			String pais, String rol, String plan, List<Juego> juegos, List<Serie> series, List<Pelicula> peliculas,
+			List<Plan> planes) {
+		this.nombre = nombre;
+		this.contrasenia = contrasenia;
+		this.fechaAlta = fechaAlta;
+		this.metodoPago = metodoPago;
+		this.direccion = direccion;
+		this.pais = pais;
+		this.rol = rol;
+		this.plan = plan;
+		this.juegos = juegos;
+		this.series = series;
+		this.peliculas = peliculas;
 	}
 
 	// getters y
@@ -36,16 +57,24 @@ public class Usuario {
 		return nombre;
 	}
 
+	public String getPlan() {
+		return plan;
+	}
+
+	public void setPlan(String plan) {
+		this.plan = plan;
+	}
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-	public String getContraseña() {
-		return contraseña;
+	public String getContrasenia() {
+		return contrasenia;
 	}
 
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
+	public void setContrasenia(String contraseña) {
+		this.contrasenia = contraseña;
 	}
 
 	public String getFechaAlta() {
@@ -88,20 +117,36 @@ public class Usuario {
 		this.rol = rol;
 	}
 
-	// metodos
-
-	public void consultarPeliculas() {
-
-		List<Pelicula> peliculas = new ArrayList<>();
+	public List<Juego> getJuegos() {
+		return juegos;
 	}
 
-	public void consultarSeries() {
-		List<Serie> peliculas = new ArrayList<>();
+	public void setJuegos(Juego juego) {
+		juegos.add(juego);
 	}
 
-	public void consultarJuegos() {
-		List<Juego> juegos = new ArrayList<>();
+	public List<Serie> getSeries() {
+		return series;
+	}
 
+	public void setSeries(Serie serie) {
+		series.add(serie);
+	}
+
+	public List<Pelicula> getPeliculas() {
+		return peliculas;
+	}
+
+	public void setPelicula(Pelicula pelicula) {
+		peliculas.add(pelicula);
+	}
+
+	@Override
+	public String toString() {
+		return "Usuario{" + "nombre='" + nombre + '\'' + ", contrasenia='" + contrasenia + '\'' + ", fechaAlta='"
+				+ fechaAlta + '\'' + ", metodoPago='" + metodoPago + '\'' + ", direccion='" + direccion + '\''
+				+ ", pais='" + pais + '\'' + ", rol='" + rol + '\'' + ", plan='" + plan + '\'' + ", juegos=" + juegos
+				+ ", series=" + series + ", peliculas=" + peliculas + '}';
 	}
 
 }

@@ -3,14 +3,16 @@ package netflix;
 public class Capitulo {
 
 	private int numero;
+	private int temporada;
 	private String nombre;
 	private int duracion;
 	private String idioma;
 
 	// constructores---------------------------------------------------------------------------
 
-	public Capitulo(int numero, String nombre, int duracion, String idioma) {
+	public Capitulo(int numero, int temporada, String nombre, int duracion, String idioma) {
 		this.numero = numero;
+		this.temporada = temporada;
 		this.nombre = nombre;
 		this.duracion = duracion;
 		this.idioma = idioma;
@@ -52,6 +54,20 @@ public class Capitulo {
 
 	public void setIdioma(String idioma) {
 		this.idioma = idioma;
+	}
+
+	public int getTemporada() {
+		return temporada;
+	}
+
+	public void setTemporada(int temporada) {
+		this.temporada = temporada;
+	}
+
+	@Override
+	public String toString() {
+		return "Capitulo{" + "numero=" + numero + ", temporada=" + temporada + ", nombre='" + nombre + '\''
+				+ ", duracion=" + duracion + " minutos" + ", idioma='" + idioma + '\'' + '}';
 	}
 
 }

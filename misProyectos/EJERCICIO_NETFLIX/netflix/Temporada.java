@@ -47,4 +47,20 @@ public class Temporada {
 		this.listaCapitulos = listaCapitulos;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Temporada{").append("numero=").append(numero).append(", anio=").append(anio).append(", capitulos=[");
+
+		for (int i = 0; i < listaCapitulos.size(); i++) {
+			sb.append(listaCapitulos.get(i).toString());
+			if (i < listaCapitulos.size() - 1) {
+				sb.append(", ");
+			}
+		}
+
+		sb.append("]}");
+		return sb.toString();
+	}
+
 }
